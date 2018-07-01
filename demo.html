@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="edit.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div id="edit" style="overflow: scroll;height:380px;">
+	</div>
+</body>
+<script type="text/javascript">
+var  values=[
+	{
+		prop1:"prop1",
+		prop2:"prop2",
+		group:[{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				}]
+	},{
+		prop1:"prop1",
+		prop2:"prop2",
+		group:[{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				}]
+	}
+]
+for(var i=0 ;i<10;i++){
+	values.push({
+		prop1:"prop1",
+		prop2:"prop2",
+		group:[{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				},{
+					pr1:"pr1",
+					value:"select * from ...."
+				}]
+	});
+}
+var editor =new JQTextEditor("edit",{isGroup:true,fontSize:"18px"});
+editor.setValues(values);
+</script>
+</html>
