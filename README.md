@@ -1,0 +1,2 @@
+# JQEditor
+一个基于jQuery和Bootstrap的Web文本编辑器
